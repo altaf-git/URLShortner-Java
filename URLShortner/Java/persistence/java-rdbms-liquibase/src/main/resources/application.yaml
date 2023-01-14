@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Liquibase Data Migration
+  flyway:
+    enabled: false
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/changelog-master.sql
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/altaf
+    username: altaf
+    password: altaf
